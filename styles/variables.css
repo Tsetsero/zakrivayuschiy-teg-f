@@ -1,1 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --inter: 'Inter', 'sans-serif';
+  --press-start-2p: 'PressStart2P', 'monospace';
+  --fw-header-bold: 700;
+  --fw-header-light: 400;
+  --fw-text: 400;
+  --font-color: #000000;
+  --section-width: clamp(375px, 48.6vw, 700px); /* от 320px до 1024px */
+}
