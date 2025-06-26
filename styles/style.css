@@ -84,13 +84,13 @@ body {
 
 .retrospective__cards {
   display: grid;
-  gap: 49.9px;
+  gap: 49px;
   word-break: break-word;
   inline-size: var(--section-width, clamp(375px, 48.6vw, 700px));
 }
 
 .card__heading {
-  padding: 4px 10px 4.5px;
+  padding: 4px 10px 4.5px;/*добавил*/
   font-size: 18px;
   font-variation-settings: "wght" var(--fw-header-bold, 700);
 }
@@ -99,13 +99,46 @@ body {
   display: grid;
   justify-self: center;
   inline-size: 100%;
-  min-block-size: clamp(375px, 700.75px, 700.75px);
+  aspect-ratio: 1/1; /*добавил*/
 }
+
+.card_intro__image {
+filter: grayscale(100%);
+}
+
+.card_sprint1-start__image {
+filter: sepia(100%);
+}
+
+.card_sprint1-end__image {
+filter: blur(2px);
+}
+
+.card_sprint2-start__image {
+filter: brightness(150%);
+}
+
+.card_sprint2-end__image {
+filter: contrast(200%);
+}
+
+.card_sprint3-start__image {
+filter: hue-rotate(90deg);
+}
+
+.card_sprint3-end__image {
+filter: saturate(200%);
+}
+
+.card_now__image {
+filter: sepia(100%);
+}
+
 
 .card__text-block {
   display: grid;
-  gap: 25px;
-  padding: 20px 25.5px 18.55px;
+    gap: 24.5px;
+    padding: 25px 25.5px 20px;  /*добавил*/
 }
 
 .card__text {
@@ -135,16 +168,17 @@ body {
 
 .footer {
   display: flex;
-  justify-content: center; /* Центрирует по горизонтали */
+  justify-content: center;
   margin-block-start: 3.125rem;
   margin-block-end: clamp(6rem, 6.25rem, 6.4375rem);
+  margin-inline: auto;
 }
 
 .card__floppy-container {
   display: flex;
-  align-items: center; /* центр по горизонтали */
+  align-items: center;
   inline-size: 335px;
-  block-size: 55px; /* расстояние между иконкой и текстом */
+  block-size: 55px;
 }
 
 .footer__cover {
@@ -170,14 +204,15 @@ body {
     font-size: 14px;
   }
 
+  .retrospective__cards {
+  display: grid;
+  gap: 48px;
+}
+
   .content {
     inline-size: 100%;
   }
  
-  .card__image {
-  min-block-size: 375px;
- }
-
   .card__floppy-container {
     inline-size: 306px;
     block-size: 84px;
@@ -187,3 +222,10 @@ body {
     flex-direction: column; /* по вертикали */
   }
 }
+
+/*@supports (-webkit-text-stroke: 1px black) or (text-stroke: 1px black) {
+  .stroke-text {
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+  }
+}*/
