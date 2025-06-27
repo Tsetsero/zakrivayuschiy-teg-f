@@ -30,6 +30,7 @@
 .heart {
   fill: transparent;
   transition: fill 0.3s ease;
+  transform-origin: center;
 }
 
 .like-icon:hover .core {
@@ -70,10 +71,6 @@
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color, #ff0000);
   transition: fill 0.3s ease 0.06s;
-}
-
-.heart {
-  transform-origin: center;
 }
 
 .like-icon.is-liked .heart {
