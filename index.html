@@ -30,10 +30,11 @@
           <div class="card__image">
             <span class="card__label">&lt;/HTML&gt;</span>
             <img
-              class="card__image card_intro__image-filter"
+              class="card__image filter-multiple"
               src="images/image.png"
               alt="Парень с ноутбуком на фоне гор, в стиле аниме"
               loading="lazy"
+              aria-hidden="true"
             />
           </div>
           <div class="card__text-block text-block_intro">
@@ -103,7 +104,7 @@
           <div class="card__image">
             <span class="card__label">&lt;/HTML&gt;</span>
             <img
-              class="card__image card_sprint1-start__image-filter"
+              class="card__image .filter-invert"
               src="images/image.png"
               alt="Парень с ноутбуком на фоне гор, в стиле аниме"
               loading="lazy"
@@ -129,6 +130,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -178,7 +180,7 @@
           <div class="card__image">
             <span class="card__label">&lt;CSS&gt;</span>
             <img
-              class="card__image card_sprint1-end__image-filter"
+              class="card__image filter-blur"
               src="images/image.png"
               alt="Парень с ноутбуком на фоне гор, в стиле аниме"
               loading="lazy"
@@ -202,6 +204,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -251,7 +254,7 @@
           <div class="card__image">
             <span class="card__label">&lt;desigions&gt;</span>
             <img
-              class="card__image card_sprint2-start__image-filter"
+              class="card__image filter-sepia"
               src="images/image.png"
               alt="Парень с ноутбуком на фоне гор, в стиле аниме"
               loading="lazy"
@@ -277,6 +280,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -326,7 +330,7 @@
           <div class="card__image">
             <span class="card__label">care</span>
             <img
-              class="card__image card_sprint2-end__image-filter"
+              class="card__image filter-contrast"
               src="images/image.png"
               alt="Парень с ноутбуком на фоне гор, в стиле аниме"
               loading="lazy"
@@ -353,6 +357,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -402,7 +407,7 @@
           <div class="card__image">
             <span class="card__label">&lt;support&gt;</span>
             <img
-              class="card__image card_sprint3-start__image-filter"
+              class="card__image filter-hue-rotate"
               src="images/image.png"
               alt="Парень с ноутбуком на фоне гор, в стиле аниме"
               loading="lazy"
@@ -426,6 +431,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -475,7 +481,7 @@
           <div class="card__image">
             <span class="card__label">&lt;lifes-style: none;&gt;</span>
             <img
-              class="card__image card_sprint3-end__image-filter"
+              class="card__image filter-grayscale"
               src="images/image.png"
               alt="Парень с ноутбуком на фоне гор, в стиле аниме"
               loading="lazy"
@@ -501,6 +507,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -548,7 +555,7 @@
           <div class="card__image">
             <span class="card__label card">experience</span>
             <img
-              class="card__image card_now__image-filter"
+              class="card__image"
               src="images/image.png"
               alt="Парень с ноутбуком на фоне гор, в стиле аниме"
               loading="lazy"
@@ -576,6 +583,7 @@
                   viewBox="0 0 39 36"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
                 >
                   <g class="heart">
                     <path
@@ -626,18 +634,18 @@
             type="button"
           >
             <svg class="floppy" fill="currentColor">
-              <use href="#floppy" />
+              <use href="./svg/floppy.svg#floppy" />
             </svg>
             <span class="button__text"> Сохранить на память </span>
           </button>
           <dialog class="modal" id="dialog-id">
             <div class="modal__content">
               <svg class="modal__icon_floppy">
-                <use href="#floppy" />
+                <use href="./svg/floppy.svg#floppy" />
               </svg>
-              <span class="modal__text button__text"
-                >Вставьте дискету, чтобы продолжить</span
-              >
+              <p class="modal__text button__text">
+                Вставьте дискету, чтобы продолжить
+              </p>
             </div>
             <form method="dialog">
               <button class="modal__button button" type="submit">
@@ -648,86 +656,6 @@
         </div>
       </section>
     </main>
-    <svg
-      class="floppy"
-      xmlns="http://www.w3.org/2000/svg"
-      style="display: none"
-    >
-      <symbol id="floppy" viewBox="0 0 40 40" fill="currentColor">
-        <path
-          fill="currentColor"
-          d="M0 0h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zm0 3h3.00001v3H0zM33 0v3h-3.00001V0z"
-        />
-        <path
-          fill="currentColor"
-          d="M30.0031 0v3h-3.00001V0zm-3.0033 0v3h-3.00001V0z"
-        />
-        <path
-          fill="currentColor"
-          d="M23.9998 0v3h-3.00001V0zM20.999 0v3h-3.00001V0z"
-        />
-        <path
-          fill="currentColor"
-          d="M17.9998 0v3h-3.00001V0zM14.999 0v3h-3.00001V0z"
-        />
-        <path
-          fill="currentColor"
-          d="M11.9999 0v3H8.99989V0zM8.99609 0v3H5.99608V0z"
-        />
-        <path
-          fill="currentColor"
-          d="M5.99994 0v3H2.99993V0zM36.0008 3v3h-3.00001V3zM8.99609 6v3H5.99608V6zm0-3v3H5.99608V3zm0 6v3H5.99608V9zM30.0031 6v3h-3.00001V6zm0-3v3h-3.00001V3zm0 6v3h-3.00001V9zm-6.0033-3v3h-3.00001V6zm0-3v3h-3.00001V3zm0 6v3h-3.00001V9zm6.0033 3v3h-3.00001v-3zm-3.0033 0v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M23.9998 12v3h-3.00001v-3zm-3.0008 0v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M17.9998 12v3h-3.00001v-3zm-3.0008 0v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M11.9999 12v3H8.99989v-3zm-3.00381 0v3H5.99608v-3zM33 21v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M30.0031 21v3h-3.00001v-3zm-3.0033 0v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M23.9998 21v3h-3.00001v-3zm-3.0008 0v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M17.9998 21v3h-3.00001v-3zm-3.0008 0v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M11.9999 21v3H8.99989v-3zm-3.00381 0v3H5.99608v-3zM33 24v3h-3.00001v-3zM8.99609 24v3H5.99608v-3zM33 27v3h-3.00001v-3zM8.99609 27v3H5.99608v-3zM33 30v3h-3.00001v-3zM8.99609 30v3H5.99608v-3zm0 3v3H5.99608v-3zM33 33v3h-3.00001v-3zm3.0008 3v3h-3.00001v-3zM33 36v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M30.0031 36v3h-3.00001v-3zm-3.0033 0v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M23.9998 36v3h-3.00001v-3zm-3.0008 0v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M17.9998 36v3h-3.00001v-3zm-3.0008 0v3h-3.00001v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M11.9999 36v3H8.99989v-3zm-3.00381 0v3H5.99608v-3z"
-        />
-        <path
-          fill="currentColor"
-          d="M5.99994 36v3H2.99993v-3zM39 39h-3.00001v-3H39zm0-3h-3.00001v-3H39zm0-3h-3.00001v-3H39zm0-3h-3.00001v-3H39zm0-3h-3.00001v-3H39zm0-3h-3.00001v-3H39zm0-3h-3.00001v-3H39zm0-3h-3.00001v-3H39zm0-3h-3.00001v-3H39zm0-3h-3.00001V9H39zm0-3h-3.00001V6H39z"
-        />
-      </symbol>
-    </svg>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
