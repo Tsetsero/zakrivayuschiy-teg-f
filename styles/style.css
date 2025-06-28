@@ -139,8 +139,18 @@ body {
 }
 
 .card__icon-button {
-  border: none;
   background-color: transparent;
+  inline-size: 39px;
+  block-size: 38px;
+  display: grid;
+  justify-content: center;
+  border: 2px solid transparent;
+}
+
+.card__icon-button:focus-visible {
+  outline: none;
+  border-color: var(--accent-color);
+  transition: border-color 0.3s ease;
 }
 
 .like-icon {
@@ -170,20 +180,6 @@ body {
   transform-origin: left;
   inline-size: 100%;
   block-size: 100%;
-}
-
-.card__icon-button {
-  inline-size: 39px;
-  block-size: 38px;
-  display: grid;
-  justify-content: center;
-  border: 2px solid transparent;
-}
-
-.card__icon-button:focus-visible {
-  outline: none;
-  border-color: var(--accent-color);
-  transition: border-color 0.3s ease;
 }
 
 .button:focus {
