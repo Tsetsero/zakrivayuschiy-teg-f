@@ -42,6 +42,10 @@ ol {
   list-style: none;
 }
 
+form {
+  inline-size: auto;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
